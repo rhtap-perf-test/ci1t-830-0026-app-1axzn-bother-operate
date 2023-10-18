@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vrpb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-830-0026-tenant/ci1t-830-0026-app/devfile-sample-vrpb@sha256:b234d6014bf887c4340e0d510f740f8533d5226b0f56f4e22d23199bc96d567a
+        name: my-nodejs
+        resources: {}
+status: {}
